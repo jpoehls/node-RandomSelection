@@ -9,23 +9,29 @@ This is an NPM package that knows how to select a random item out of a group of 
 
 ## Node Usage
 
-    var Picker = require('RandomSelection').Picker;
+```javascript
+var Picker = require('RandomSelection').Picker;
 
-    var greetingPicker = new Picker([ 'hello', 'hi', 'howdy' ]);
-    var randomGreeting = greetingPicker.pick(); // Will return one of the options above.
+var greetingPicker = new Picker([ 'hello', 'hi', 'howdy' ]);
+var randomGreeting = greetingPicker.pick(); // Will return one of the options above.
+```
 
 ## Browser Usage
 
 #### HTML
 
-    <script src="path/to/Picker.js"></script>
+```html
+<script src="path/to/Picker.js"></script>
+```
 
 #### JavaScript
 
-    var Picker = new RandomSelection.Picker();
+```javascript
+var Picker = new RandomSelection.Picker();
 
-    var greetingPicker = new Picker([ 'hello', 'hi', 'howdy' ]);
-    var randomGreeting = greetingPicker.pick(); // Will return one of the options above.
+var greetingPicker = new Picker([ 'hello', 'hi', 'howdy' ]);
+var randomGreeting = greetingPicker.pick(); // Will return one of the options above.
+```
 
 ## License
 
