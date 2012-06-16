@@ -1,12 +1,15 @@
-// Support running in a browser where we won't have `require`.
+// Support running the tests in a browser where we won't have `require`.
 if (typeof require === 'function') {
+  // We are running in Node.
   var assert = require('assert');
   var Picker = require('../src/Picker.js').Picker;
 }
+else {
+  // We are running in the browser.
+  var Picker = RandomSelection.Picker;
 
-// Use our own `assert` methods when running in the browser.
-// Really need a better way to do this.
-if (typeof assert === 'undefined') {
+  // Use our own `assert` methods when running in the browser.
+  // Really need a better way to do this.
   assert = {
     equal: function(actual, expected, msg) {
       if (actual !== expected) {

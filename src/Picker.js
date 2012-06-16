@@ -17,8 +17,9 @@
   }
   else {
     // We are running in the browser.
-    // Use `window` as our namespace.
-    ns = this;
+    // `this` is the `window`.
+    // Use window.RandomSelection as our namespace.
+    ns = this.RandomSelection = {};
   }
 
   // Gets a shallow copy of the given array.
