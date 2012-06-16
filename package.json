@@ -1,0 +1,27 @@
+{
+  "author": "Joshua Poehls <joshua@zduck.com> (http://zduck.com)",
+  "name": "RandomSelection",
+  "description": "Randomly select an option from an array, without duplication, until all options are gone. Then cycles again. The package works as a node module as well as in the browser.",
+  "version": "1.0.0",
+  "homepage": "https://github.com/jpoehls/node-RandomSelection",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/jpoehls/node-RandomSelection.git"
+  },
+  "main": "./src/Picker.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "mocha": "*"
+  },
+  "optionalDependencies": {},
+  "engines": {
+    "node": "*"
+  },
+  "tags": ["random", "array", "browser"],
+  "bugs": {
+    "url": "https://github.com/jpoehls/node-RandomSelection/issues"
+  }
+}
