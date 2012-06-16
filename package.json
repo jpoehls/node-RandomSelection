@@ -8,7 +8,10 @@
     "type": "git",
     "url": "git://github.com/jpoehls/node-RandomSelection.git"
   },
-  "main": "./src/Picker.js",
+  "directories": {
+    "lib": "./lib"
+  },
+  "main": "./lib/Picker.js",
   "scripts": {
     "test": "mocha"
   },

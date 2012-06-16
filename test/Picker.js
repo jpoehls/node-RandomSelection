@@ -2,7 +2,7 @@
 if (typeof require === 'function') {
   // We are running in Node.
   var assert = require('assert');
-  var Picker = require('../src/Picker.js').Picker;
+  var Picker = require('../lib/Picker.js').Picker;
 }
 else {
   // We are running in the browser.

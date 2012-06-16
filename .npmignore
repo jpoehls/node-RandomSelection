@@ -1,4 +1,2 @@
 .DS_Store
-Makefile
-*.md
-test/
+npm-debug.log

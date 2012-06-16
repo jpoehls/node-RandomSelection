@@ -7,6 +7,12 @@ This is an NPM package that knows how to select a random item out of a group of 
 
     npm install RandomSelection
 
+## Testing
+
+Once the package is installed, you can run the unit tests using NPM.
+
+    npm test RandomSelection
+
 ## Node Usage
 
 ```javascript
