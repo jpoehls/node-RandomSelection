@@ -1,22 +1,27 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Mocha Tests</title>
+  <title>RandomSelection tests</title>
   <link rel="stylesheet" href="../node_modules/mocha/mocha.css" />
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
   <script src="../node_modules/mocha/mocha.js"></script>
-  <script>mocha.setup('bdd')</script>
-  <script src="../src/Picker.js"></script>
-  <script src="Picker.js"></script>
   <script>
-    $(function(){
-      mocha
-        //.globals(['foo', 'bar']) // acceptable globals
-        .run()
-    })
+      mocha.setup({
+        ui: 'bdd',
+        globals: []
+      });
   </script>
+  
+  <!-- scripts being tested -->
+  <script src="../src/Picker.js"></script>
+  
+  <!-- tests -->
+  <script src="Picker.js"></script>
+  
 </head>
 <body>
-  <div id="mocha"></div>
+    <div id="mocha"></div>
+    <script>
+        mocha.run();
+    </script>
 </body>
 </html>

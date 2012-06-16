@@ -1,8 +1,11 @@
+// Support running in a browser where we won't have `require`.
 if (typeof require === 'function') {
   var assert = require('assert');
   var Picker = require('../src/Picker.js').Picker;
 }
 
+// Use our own `assert` methods when running in the browser.
+// Really need a better way to do this.
 if (typeof assert === 'undefined') {
   assert = {
     equal: function(actual, expected, msg) {
