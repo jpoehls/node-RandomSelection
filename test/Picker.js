@@ -1,28 +1,13 @@
 // Support running the tests in a browser where we won't have `require`.
 if (typeof require === 'function') {
   // We are running in Node.
-  var assert = require('assert');
+  var assert = require('chai').assert;
   var Picker = require('../lib/Picker.js').Picker;
 }
 else {
   // We are running in the browser.
+  var assert = chai.assert;
   var Picker = RandomSelection.Picker;
-
-  // Use our own `assert` methods when running in the browser.
-  // Really need a better way to do this.
-  assert = {
-    equal: function(actual, expected, msg) {
-      if (actual !== expected) {
-        throw new Error(msg);
-      }
-    },
-
-    notEqual: function(actual, expected, msg) {
-      if (actual === expected) {
-        throw new Error(msg);
-      }
-    }
-  };
 }
 
 describe('pick()', function() {
