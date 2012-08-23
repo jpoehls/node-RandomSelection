@@ -1,3 +1,4 @@
+[![build status](https://secure.travis-ci.org/jpoehls/node-RandomSelection.png)](http://travis-ci.org/jpoehls/node-RandomSelection)
 RandomSelection
 ===============
 
